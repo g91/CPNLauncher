@@ -1,0 +1,23 @@
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\bin\Debug\DemoLauncher.exe.config
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\bin\Debug\DemoLauncher.exe
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\bin\Debug\DemoLauncher.pdb
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\DemoLauncher.Form1.resources
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\DemoLauncher.Form2.resources
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\DemoLauncher.Properties.Resources.resources
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\CPNLauncher.csproj.GenerateResource.cache
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\CPNLauncher.csproj.CoreCompileInputs.cache
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\DemoLauncher.exe
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\DemoLauncher.pdb
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Debug\CPNLauncher.csprojAssemblyReference.cache
+L:\CPN\1\Launcher\bin\Debug\DemoLauncher.exe.config
+L:\CPN\1\Launcher\bin\Debug\DemoLauncher.exe
+L:\CPN\1\Launcher\bin\Debug\DemoLauncher.pdb
+L:\CPN\1\Launcher\obj\Debug\CPNLauncher.csprojAssemblyReference.cache
+L:\CPN\1\Launcher\obj\Debug\DemoLauncher.Form1.resources
+L:\CPN\1\Launcher\obj\Debug\DemoLauncher.Form2.resources
+L:\CPN\1\Launcher\obj\Debug\DemoLauncher.Form3.resources
+L:\CPN\1\Launcher\obj\Debug\DemoLauncher.Properties.Resources.resources
+L:\CPN\1\Launcher\obj\Debug\CPNLauncher.csproj.GenerateResource.cache
+L:\CPN\1\Launcher\obj\Debug\CPNLauncher.csproj.CoreCompileInputs.cache
+L:\CPN\1\Launcher\obj\Debug\DemoLauncher.exe
+L:\CPN\1\Launcher\obj\Debug\DemoLauncher.pdb

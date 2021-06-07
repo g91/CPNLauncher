@@ -1,0 +1,47 @@
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\bin\Release\DemoLauncher.exe.config
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\bin\Release\DemoLauncher.exe
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\bin\Release\DemoLauncher.pdb
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Form1.resources
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Form2.resources
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Properties.Resources.resources
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\CPNLauncher.csproj.GenerateResource.cache
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\CPNLauncher.csproj.CoreCompileInputs.cache
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.exe
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.pdb
+C:\Users\bob\Documents\New folder (2)\1\DemoLauncher\obj\Release\CPNLauncher.csprojAssemblyReference.cache
+L:\Dev\New folder (2)\1\DemoLauncher\bin\Release\DemoLauncher.exe.config
+L:\Dev\New folder (2)\1\DemoLauncher\bin\Release\DemoLauncher.exe
+L:\Dev\New folder (2)\1\DemoLauncher\bin\Release\DemoLauncher.pdb
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\CPNLauncher.csprojAssemblyReference.cache
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Form1.resources
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Form2.resources
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Form3.resources
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.Properties.Resources.resources
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\CPNLauncher.csproj.GenerateResource.cache
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\CPNLauncher.csproj.CoreCompileInputs.cache
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.exe
+L:\Dev\New folder (2)\1\DemoLauncher\obj\Release\DemoLauncher.pdb
+L:\CPN\1\Launcher\bin\Release\DemoLauncher.exe.config
+L:\CPN\1\Launcher\bin\Release\DemoLauncher.exe
+L:\CPN\1\Launcher\bin\Release\DemoLauncher.pdb
+L:\CPN\1\Launcher\obj\Release\CPNLauncher.csprojAssemblyReference.cache
+L:\CPN\1\Launcher\obj\Release\DemoLauncher.Form1.resources
+L:\CPN\1\Launcher\obj\Release\DemoLauncher.Form2.resources
+L:\CPN\1\Launcher\obj\Release\DemoLauncher.Form3.resources
+L:\CPN\1\Launcher\obj\Release\DemoLauncher.Properties.Resources.resources
+L:\CPN\1\Launcher\obj\Release\CPNLauncher.csproj.GenerateResource.cache
+L:\CPN\1\Launcher\obj\Release\CPNLauncher.csproj.CoreCompileInputs.cache
+L:\CPN\1\Launcher\obj\Release\DemoLauncher.exe
+L:\CPN\1\Launcher\obj\Release\DemoLauncher.pdb
+L:\CPN\Launcher\Launcher\bin\Release\DemoLauncher.exe.config
+L:\CPN\Launcher\Launcher\bin\Release\DemoLauncher.exe
+L:\CPN\Launcher\Launcher\bin\Release\DemoLauncher.pdb
+L:\CPN\Launcher\Launcher\obj\Release\CPNLauncher.csprojAssemblyReference.cache
+L:\CPN\Launcher\Launcher\obj\Release\DemoLauncher.Form1.resources
+L:\CPN\Launcher\Launcher\obj\Release\DemoLauncher.Form2.resources
+L:\CPN\Launcher\Launcher\obj\Release\DemoLauncher.Form3.resources
+L:\CPN\Launcher\Launcher\obj\Release\DemoLauncher.Properties.Resources.resources
+L:\CPN\Launcher\Launcher\obj\Release\CPNLauncher.csproj.GenerateResource.cache
+L:\CPN\Launcher\Launcher\obj\Release\CPNLauncher.csproj.CoreCompileInputs.cache
+L:\CPN\Launcher\Launcher\obj\Release\DemoLauncher.exe
+L:\CPN\Launcher\Launcher\obj\Release\DemoLauncher.pdb
