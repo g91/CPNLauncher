@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Security.Cryptography;
+using System.Threading;
 
 namespace DemoLauncher
 {
@@ -27,19 +28,37 @@ namespace DemoLauncher
             GameDownList.Clear();
         }
 
-        public static bool LoadFile()
-        {
-            int count = GameDownList.Count() -1;
 
-            if (count > -1)
+        public static void threadFunc3(object arg)
+        {
+            int count = GameDownList.Count() - 1;
+
+            if (count > -2)
             {
                 string file = GameDownList[count].ToString();
                 GetDownload(path_directory, file, path_download);
                 GameDownList.RemoveAt(count);
                 counter_down++;
-                return true;
+                //return true;
             }
-            return false;
+        }
+
+        public static bool LoadFile()
+        {
+            Thread tParm = new Thread(new ParameterizedThreadStart(threadFunc3));
+            tParm.Start();
+
+            //int count = GameDownList.Count() -1;
+
+            //if (count > -1)
+            //{
+            //    string file = GameDownList[count].ToString();
+            //    GetDownload(path_directory, file, path_download);
+            //    GameDownList.RemoveAt(count);
+            //    counter_down++;
+            //    return true;
+            //}
+            return true;
         }
 
 
@@ -173,15 +192,19 @@ namespace DemoLauncher
                 }
             }
         }
-
-
-        public static void Download(string directory, string Path, string FileX)
+        public static void threadFunc(object arg)
         {
+            string[] myArg = arg.ToString().Split('|');
+            string directory = myArg[0];
+            string Path = myArg[1];
+            string FileX = myArg[2];
 
+            //Logger.Log("test" + directory + " " + Path + " " + FileX);
             DateTime startTime = DateTime.UtcNow;
 
             WebRequest request = WebRequest.Create(Path);
             WebResponse response = request.GetResponse();
+
             using (Stream responseStream = response.GetResponseStream())
             {
                 using (Stream fileStream = File.OpenWrite(directory + "\\" + FileX))
@@ -202,6 +225,109 @@ namespace DemoLauncher
                 }
             }
 
+
+        }
+
+        public static void Download2(string directory, string Path, string FileX)
+        {
+            DateTime startTime = DateTime.UtcNow;
+
+            WebRequest request = WebRequest.Create(Path);
+            WebResponse response = request.GetResponse();
+
+            using (Stream responseStream = response.GetResponseStream())
+            {
+                using (Stream fileStream = File.OpenWrite(directory + "\\" + FileX))
+                {
+                    byte[] buffer = new byte[4096];
+                    int bytesRead = responseStream.Read(buffer, 0, 4096);
+                    while (bytesRead > 0)
+                    {
+                        fileStream.Write(buffer, 0, bytesRead);
+                        DateTime nowTime = DateTime.UtcNow;
+                        if ((nowTime - startTime).TotalMinutes > 5)
+                        {
+                            throw new ApplicationException(
+                                "Download timed out");
+                        }
+                        bytesRead = responseStream.Read(buffer, 0, 4096);
+                    }
+                }
+            }
+        }
+
+        public static Process process = new Process();
+
+        public static void CPNDownloader()
+        {
+            process.EnableRaisingEvents = true;
+            process.OutputDataReceived += new System.Diagnostics.DataReceivedEventHandler(process_OutputDataReceived);
+            process.ErrorDataReceived += new System.Diagnostics.DataReceivedEventHandler(process_ErrorDataReceived);
+            process.Exited += new System.EventHandler(process_Exited);
+
+            process.StartInfo.FileName = "CPNDownloader3.exe";
+            process.StartInfo.Arguments = "";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardError = true;
+            process.StartInfo.RedirectStandardOutput = true;
+
+            process.Start();
+            process.BeginErrorReadLine();
+            process.BeginOutputReadLine();
+
+            //below line is optional if we want a blocking call
+            //process.WaitForExit();
+        }
+
+        public static void process_Exited(object sender, EventArgs e)
+        {
+            Console.WriteLine(string.Format("process exited with code {0}\n", process.ExitCode.ToString()));
+        }
+
+        public static void process_ErrorDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            //Console.WriteLine(e.Data + "\n");
+            Logger.Log(e.Data + "\n");
+        }
+
+        public static void process_OutputDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            //Console.WriteLine(e.Data + "\n");
+            Logger.Log(e.Data + "\n");
+        }
+
+
+
+        public static void Download(string directory, string Path, string FileX)
+        {
+            Helpers.RunShell("CPNDownloader3.exe", "games");
+            //DateTime startTime = DateTime.UtcNow;
+
+            //WebRequest request = WebRequest.Create(Path);
+            //WebResponse response = request.GetResponse();
+
+            //using (Stream responseStream = response.GetResponseStream())
+            //{
+            //    using (Stream fileStream = File.OpenWrite(directory + "\\" + FileX))
+            //    {
+            //        byte[] buffer = new byte[4096];
+            //        int bytesRead = responseStream.Read(buffer, 0, 4096);
+            //        while (bytesRead > 0)
+            //        {
+            //            fileStream.Write(buffer, 0, bytesRead);
+            //            DateTime nowTime = DateTime.UtcNow;
+            //            if ((nowTime - startTime).TotalMinutes > 5)
+            //            {
+            //                throw new ApplicationException(
+            //                    "Download timed out");
+            //            }
+            //            bytesRead = responseStream.Read(buffer, 0, 4096);
+            //        }
+            //    }
+            //}
+            //string arg = directory + "|" + Path + "|" + FileX;
+            //Thread tParm = new Thread(new ParameterizedThreadStart(threadFunc));
+            //tParm.Start(arg);
         }
     }
 }

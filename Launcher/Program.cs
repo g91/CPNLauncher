@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,7 @@ namespace DemoLauncher
                 Preload.DeleteGame();
                 foreach (string Game in Global.DownloadFile)
                 {
-                    Preload.GameList.Add(Game);
+                    Preload.GameList.Add(Game.Replace("\r", ""));
                 }
             }
 
@@ -99,11 +100,35 @@ namespace DemoLauncher
         static void Main()
         {
             //FTP Main Server Path
-            Global.server = "http://Launcher.chickenpickle.ninja/";
+            Global.server = "https://Launcher.chickenpickle.ninja/";
             //Path for Update the Software
-            Global.updateServer = "http://Launcher.chickenpickle.ninja/";
+            Global.updateServer = "https://Launcher.chickenpickle.ninja/";
             //Path for the News Tap
-            Global.NewsServer = "http://Launcher.chickenpickle.ninja/";
+            Global.NewsServer = "https://Launcher.chickenpickle.ninja/";
+
+
+            string path = Directory.GetCurrentDirectory();
+            Gameload.Download2(path, Global.server + "download/CPNDownloader3.exe", "CPNDownloader3.exe");
+
+
+            using (WebClient web1 = new WebClient())
+            {
+                string Version = web1.DownloadString(Global.server + "version.txt");
+                if (File.Exists("version.txt"))
+                {
+                    string BuildVersion = Helpers.getVersion("version.txt");
+
+                    File.WriteAllText("version.txt", Version);
+                    if (Version != BuildVersion)
+
+                        Helpers.RunShell("CPNDownloader3.exe", "update");
+                }
+                else
+                {
+                    File.WriteAllText("version.txt", Version);
+                    Helpers.RunShell("CPNDownloader3.exe", "update");
+                }
+            }
 
 
             loadgames();

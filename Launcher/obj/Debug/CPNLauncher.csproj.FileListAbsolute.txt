@@ -21,3 +21,16 @@ L:\CPN\1\Launcher\obj\Debug\CPNLauncher.csproj.GenerateResource.cache
 L:\CPN\1\Launcher\obj\Debug\CPNLauncher.csproj.CoreCompileInputs.cache
 L:\CPN\1\Launcher\obj\Debug\DemoLauncher.exe
 L:\CPN\1\Launcher\obj\Debug\DemoLauncher.pdb
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.csproj.AssemblyReference.cache
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.csproj.SuggestedBindingRedirects.cache
+H:\CPNLauncher\Launcher\obj\Debug\DemoLauncher.Form1.resources
+H:\CPNLauncher\Launcher\obj\Debug\DemoLauncher.Form2.resources
+H:\CPNLauncher\Launcher\obj\Debug\DemoLauncher.Form3.resources
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.csproj.GenerateResource.cache
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.csproj.CoreCompileInputs.cache
+H:\CPNLauncher\Launcher\bin\Debug\CPNLauncher.exe.config
+H:\CPNLauncher\Launcher\bin\Debug\CPNLauncher.exe
+H:\CPNLauncher\Launcher\bin\Debug\CPNLauncher.pdb
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.Properties.Resources.resources
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.exe
+H:\CPNLauncher\Launcher\obj\Debug\CPNLauncher.pdb

@@ -1,0 +1,6 @@
+3/15/2023 10:38:43 AM : Loaded 1 game profiles
+3/15/2023 12:46:32 PM : update
+3/15/2023 12:46:32 PM : performing update
+3/15/2023 12:46:32 PM : killing CPNLauncher Process
+3/15/2023 12:46:32 PM : downloading update
+3/15/2023 12:46:33 PM : 10 seconds the updater will close and CPN launcher as resume as normal
